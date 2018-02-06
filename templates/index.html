@@ -2,7 +2,7 @@
 <title>Hello from Flask</title>
 <h1>Exemple pour tp</h1>
 <ul>
-    {% for tp in data.tp %}
-      <li>{{ tp }}</li>
+    {% for i in range(data.tb |length) %}
+      <li>{{ data.added_value[i] }} {{ data.tp[i]}}</li>
     {% endfor %}
 </ul>
